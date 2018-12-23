@@ -5,10 +5,11 @@ import math
 
 class Coordinate(object):
     """docstring for Coordinate"""
-    def __init__(self, d1, d2, label=''):
+    def __init__(self, d1, d2, label='', partition=0):
         self.label = label
         self.d1 = d1
         self.d2 = d2
+        self.partition = partition
 
     @staticmethod
     def coordinates_from_file(file_name):
